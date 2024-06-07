@@ -1,6 +1,10 @@
 #OvlNum Symbol Address RegisterHook
 
 #transparent textbox
-arm9 Tr_TextBox 0205B564 2
-arm9 FieldMsgPrintInit 0205B4EC 2
-arm9 WindowClose 02041190 0
+#arm9 Tr_TextBox 0205B564 2
+#arm9 FieldMsgPrintInit 0205B4EC 2
+#arm9 WindowClose 02041190 0
+
+#Egg fix for PKHaX Egglocke
+arm9 sub_0206D328 0206D328 2
+arm9 PokeIconIndexGetByMonsNumber 080741BC 3

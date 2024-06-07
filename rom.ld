@@ -74,6 +74,7 @@ PokePasoParaFastModeOn = 0x0206DDD8 |1;
 PokePasoParaFastModeOff = 0x0206DE00 |1;
 PokePasoParaPut = 0x0206ED70 |1;
 SodateyaWork_GetPokePasoPointer = 0x0206BDB0 |1;
+SanitizeFormNumber = 0x02070438 |1;
 PokeParaPersonalRndChange = 0x0207235C | 1;
 PokeNatureGet = 0x0206FE2C |1;
 PokeSetMove = 0x020712D8 |1;

@@ -84,7 +84,6 @@ all: $(OUTPUT)
 	$(NARCHIVE) extract base/root/a/0/2/8 -o build/a028/ -nf
 	$(PYTHON) scripts/make.py
 	$(ARMIPS) $(ARMIPS_SRCS)
-	$(MAKE) move_narc
 	$(NARCHIVE) create build/synth.narc build/a028/ -nf
 	cp build/synth.narc base/root/a/0/2/8
 	@echo -e "\e[32;1mMaking ROM..\e[37;1m"
@@ -93,17 +92,6 @@ all: $(OUTPUT)
 
 clean:
 	rm -rf build/*
-
-move_narc:
-	# font edit
-	$(NARCHIVE) extract base/root/a/0/1/6 -o build/font -nf
-	cp -r data/rawdata/font/. build/font
-	$(NARCHIVE) create base/root/a/0/1/6 build/font -nf
-
-	# textbox graphic?
-	$(NARCHIVE) extract base/root/a/0/3/8 -o build/textbox -nf
-	cp -r data/rawdata/textbox/. build/textbox
-	$(NARCHIVE) create base/root/a/0/3/8 build/textbox -nf
 
 build_tools:
 	mkdir -p tools/source
